@@ -1,55 +1,19 @@
-<!DOCTYPE html>
+<!DOCTYPE html>  <!-- 解釋文檔的類型 -->
+
 <html lang="zh-Hant-TW"> <!-- 網頁的語系(台灣繁體語系) -->
-
-<!-- head 標頭資訊的開始，用來作為網頁的描述 --> 
-<head>
-    <meta charset="UTF-8">  <!-- utf-8編碼，中文不會產生亂碼 -->
-    <title>VictorWu0814的首頁</title>  <!-- 網頁的標題 -->
+    <head>  <!-- head 標頭資訊的開始，用來作為網頁的描述 --> 
+        <meta charset="UTF-8">  <!-- utf-8編碼，中文不會產生亂碼 -->
+        <title>Victor Wu 的筆記簿</title>  <!-- 網頁的標題 -->
+        <link href="css-001.css" rel="stylesheet"> <!-- CSS外部連接套用 (External Link)-->
     
-    <!--指定畫面初始縮放比例為 100%，即不放大也不縮小-->
-    <!--width=device-width 指定瀏覽器頁面的寬度同裝置 (device) 的寬度-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <!-- <meta name="description" content="提供搜尋引擎關於網頁頁面內的重要資訊"> -->
-    <link href="mycss-001.css" rel="stylesheet">
-</head>
-<!-- head標頭資訊設定結束 -->
+        <frameset rows="15%,*">  <!-- 子視窗分割標籤 -->
+            <frame src="page-01.html" name="W1">  <!-- 子視窗內容定義標籤 -->
+            <frameset cols="12%,*">  <!-- cols 設定垂直視窗數目, rows 設定水平視窗數目 -->
+                <frame src="page-02.html" name="W2">  <!-- 指定窗框所顯示的網頁檔，src="URL"-->
+                <frame src="page-03.html" name="W3">  <!--設定窗框名稱，如：name="tt1"-->
+    </head>
 
-<!-- <body style="background-color:rgb(64, 66, 64);"> -->  <!-- 底圖顏色設定 -->
-<body> <!--HTML文件中所有要顯示的內容-->
-<header> <!-- header 標頭開始：放置表頭重要資訊、ＬＯＧＯ、導覽列等資訊-->
+    <body> <!--HTML文件中所有要顯示的內容-->
 
-    <!--加入圖片並限制尺吋-->
-    <img src  = "images/Js.png"
-         width= "200px"
-         hight= "200px">
-
-    <h2> Victor Wu 0814 </h2> <!--HTML H1 H2 H3 H4 H5 H6 標題-->
-
-    <!-- nav導覽列設定開始-->
-    <nav class="navigation"> <!-- nav設定類別（class)為navigation-->
-        <ul> 
-            <li><a href="next-01.html">第一頁</a></li>
-            <li><a href="next-02.html">第二頁</a></li>
-        </ul>
-    </nav>  
-    <!-- nav導覽列設定結束--> 
-
-</header>  <!-- header 標頭結束-->
-
-<main> <!-- main 內文設定開始：網頁的主要內容 -->
-    文字換行<br> <!-- br 換行-->
-    第二行
-    <p></p> <!-- p 段落--> 
-    段落
-    <p></p>
-
-	<!-- a 超連結設定，需搭配 href，target="_blank 開啟新視窗 --> 
-	<a href = "https://tw.yahoo.com/" target = "_blank"> yahoo </a>  
-</main> <!-- main 內文設定結束-->
-
-<footer>  <!-- footer 頁尾設定開始--> 
-    <p class="copyright"><small>&copy; Copyright 2021 by VictorWu0814</small></p>
-</footer> <!-- footer 頁尾設定結束-->
-
-</body>
+    </body>
 </html>
